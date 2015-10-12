@@ -16,20 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcs-kt-RV8">
-                                <rect key="frame" x="162" y="357" width="91" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8cD-Gt-AnU">
+                                <rect key="frame" x="107" y="268" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Wl6-ma-bua"/>
+                                    <constraint firstAttribute="height" constant="200" id="uMz-FA-yTo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcs-kt-RV8">
+                                <rect key="frame" x="162" y="476" width="91" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.98810478372520205" green="0.94758872874174571" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="t9Y-yV-17l" kind="push" identifier="showPlaylistDetail" id="owN-K1-7Sc"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.22969504663756801" green="0.89822898454386424" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wcs-kt-RV8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="23n-LV-lrb"/>
+                            <constraint firstItem="8cD-Gt-AnU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5sS-ym-UjR"/>
+                            <constraint firstItem="wcs-kt-RV8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8a9-KN-Aah"/>
+                            <constraint firstItem="8cD-Gt-AnU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3h-vF-B9A"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="cJE-jP-0NY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
