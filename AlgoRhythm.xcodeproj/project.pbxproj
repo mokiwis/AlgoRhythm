@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1409B3FE1BC3446D00C27B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B3FD1BC3446D00C27B6D /* AppDelegate.swift */; };
-		1409B4001BC3446D00C27B6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B3FF1BC3446D00C27B6D /* ViewController.swift */; };
+		1409B4001BC3446D00C27B6D /* PlayListMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B3FF1BC3446D00C27B6D /* PlayListMasterViewController.swift */; };
 		1409B4031BC3446D00C27B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1409B4011BC3446D00C27B6D /* Main.storyboard */; };
 		1409B4051BC3446D00C27B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1409B4041BC3446D00C27B6D /* Assets.xcassets */; };
 		1409B4081BC3446D00C27B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1409B4061BC3446D00C27B6D /* LaunchScreen.storyboard */; };
 		1409B4131BC3446D00C27B6D /* AlgoRhythmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B4121BC3446D00C27B6D /* AlgoRhythmTests.swift */; };
 		1409B41E1BC3446D00C27B6D /* AlgoRhythmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B41D1BC3446D00C27B6D /* AlgoRhythmUITests.swift */; };
+		1462C2CA1BC7294900CC1BD3 /* PlayListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1462C2C91BC7294900CC1BD3 /* PlayListDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		1409B3FA1BC3446D00C27B6D /* AlgoRhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgoRhythm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1409B3FD1BC3446D00C27B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1409B3FF1BC3446D00C27B6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1409B3FF1BC3446D00C27B6D /* PlayListMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListMasterViewController.swift; sourceTree = "<group>"; };
 		1409B4021BC3446D00C27B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1409B4041BC3446D00C27B6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1409B4071BC3446D00C27B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		1409B4191BC3446D00C27B6D /* AlgoRhythmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgoRhythmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1409B41D1BC3446D00C27B6D /* AlgoRhythmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoRhythmUITests.swift; sourceTree = "<group>"; };
 		1409B41F1BC3446D00C27B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1462C2C91BC7294900CC1BD3 /* PlayListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayListDetailViewController.swift; path = ../PlayListDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				1409B3FD1BC3446D00C27B6D /* AppDelegate.swift */,
-				1409B3FF1BC3446D00C27B6D /* ViewController.swift */,
+				1409B3FF1BC3446D00C27B6D /* PlayListMasterViewController.swift */,
+				1462C2C91BC7294900CC1BD3 /* PlayListDetailViewController.swift */,
 				1409B4011BC3446D00C27B6D /* Main.storyboard */,
 				1409B4041BC3446D00C27B6D /* Assets.xcassets */,
 				1409B4061BC3446D00C27B6D /* LaunchScreen.storyboard */,
@@ -255,8 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1409B4001BC3446D00C27B6D /* ViewController.swift in Sources */,
+				1409B4001BC3446D00C27B6D /* PlayListMasterViewController.swift in Sources */,
 				1409B3FE1BC3446D00C27B6D /* AppDelegate.swift in Sources */,
+				1462C2CA1BC7294900CC1BD3 /* PlayListDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +485,7 @@
 				1409B4241BC3446D00C27B6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1409B4251BC3446D00C27B6D /* Build configuration list for PBXNativeTarget "AlgoRhythmTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +494,7 @@
 				1409B4271BC3446D00C27B6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1409B4281BC3446D00C27B6D /* Build configuration list for PBXNativeTarget "AlgoRhythmUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +503,7 @@
 				1409B42A1BC3446D00C27B6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
