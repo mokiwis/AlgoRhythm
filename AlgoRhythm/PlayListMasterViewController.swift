@@ -33,7 +33,7 @@ class PlayListMasterViewController: UIViewController {
             
             let playlistDetailController = segue.destinationViewController as! PlayListDetailViewController
             
-            playlistDetailController.segueLabelText = "Yay! you pressed the button!"
+            playlistDetailController.playlist = Playlist(index: 0)
             
         }
     }
