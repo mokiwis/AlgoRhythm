@@ -15,6 +15,8 @@
 		1409B4131BC3446D00C27B6D /* AlgoRhythmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B4121BC3446D00C27B6D /* AlgoRhythmTests.swift */; };
 		1409B41E1BC3446D00C27B6D /* AlgoRhythmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1409B41D1BC3446D00C27B6D /* AlgoRhythmUITests.swift */; };
 		1462C2CA1BC7294900CC1BD3 /* PlayListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1462C2C91BC7294900CC1BD3 /* PlayListDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		149FF79C1BCC2D2E001FCFF2 /* MusicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149FF79B1BCC2D2E001FCFF2 /* MusicLibrary.swift */; settings = {ASSET_TAGS = (); }; };
+		149FF79E1BCC2E64001FCFF2 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149FF79D1BCC2E64001FCFF2 /* Playlist.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1409B41D1BC3446D00C27B6D /* AlgoRhythmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoRhythmUITests.swift; sourceTree = "<group>"; };
 		1409B41F1BC3446D00C27B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1462C2C91BC7294900CC1BD3 /* PlayListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayListDetailViewController.swift; path = ../PlayListDetailViewController.swift; sourceTree = "<group>"; };
+		149FF79B1BCC2D2E001FCFF2 /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
+		149FF79D1BCC2E64001FCFF2 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				1409B3FD1BC3446D00C27B6D /* AppDelegate.swift */,
 				1409B3FF1BC3446D00C27B6D /* PlayListMasterViewController.swift */,
 				1462C2C91BC7294900CC1BD3 /* PlayListDetailViewController.swift */,
+				149FF79B1BCC2D2E001FCFF2 /* MusicLibrary.swift */,
+				149FF79D1BCC2E64001FCFF2 /* Playlist.swift */,
 				1409B4011BC3446D00C27B6D /* Main.storyboard */,
 				1409B4041BC3446D00C27B6D /* Assets.xcassets */,
 				1409B4061BC3446D00C27B6D /* LaunchScreen.storyboard */,
@@ -195,6 +201,7 @@
 				TargetAttributes = {
 					1409B3F91BC3446D00C27B6D = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 9G9J97YGH5;
 					};
 					1409B40D1BC3446D00C27B6D = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -261,6 +268,8 @@
 				1409B4001BC3446D00C27B6D /* PlayListMasterViewController.swift in Sources */,
 				1409B3FE1BC3446D00C27B6D /* AppDelegate.swift in Sources */,
 				1462C2CA1BC7294900CC1BD3 /* PlayListDetailViewController.swift in Sources */,
+				149FF79C1BCC2D2E001FCFF2 /* MusicLibrary.swift in Sources */,
+				149FF79E1BCC2E64001FCFF2 /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +409,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AlgoRhythm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moisescervantes.AlgoRhythm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,7 +422,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AlgoRhythm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.moisescervantes.AlgoRhythm;
 				PRODUCT_NAME = "$(TARGET_NAME)";

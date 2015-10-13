@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gpL-Z1-MbP">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Playlists-->
@@ -16,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="8cD-Gt-AnU">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="8cD-Gt-AnU">
                                 <rect key="frame" x="107" y="268" width="200" height="200"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.9882352941176471" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -25,9 +27,12 @@
                                     <constraint firstAttribute="height" constant="200" id="uMz-FA-yTo"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcs-kt-RV8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcs-kt-RV8">
                                 <rect key="frame" x="162" y="476" width="91" height="21"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="Kz3-Ua-k2n"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -38,14 +43,19 @@
                         <animations/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wcs-kt-RV8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="23n-LV-lrb"/>
                             <constraint firstItem="8cD-Gt-AnU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5sS-ym-UjR"/>
-                            <constraint firstItem="wcs-kt-RV8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8a9-KN-Aah"/>
                             <constraint firstItem="8cD-Gt-AnU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3h-vF-B9A"/>
+                            <constraint firstItem="wcs-kt-RV8" firstAttribute="top" secondItem="8cD-Gt-AnU" secondAttribute="bottom" constant="8" symbolic="YES" id="bIS-W9-2dX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wcs-kt-RV8" secondAttribute="bottom" constant="239" id="nfK-6B-BCJ"/>
+                            <constraint firstItem="wcs-kt-RV8" firstAttribute="centerX" secondItem="8cD-Gt-AnU" secondAttribute="centerX" id="q1f-xK-YCL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="cJE-jP-0NY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="aButton" destination="wcs-kt-RV8" id="REL-5C-sCn"/>
+                        <outlet property="playlistView0" destination="8cD-Gt-AnU" id="mNB-8V-nYC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,7 +73,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You haven't pressed the button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dp-je-evx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dp-je-evx">
                                 <rect key="frame" x="78" y="357" width="258" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -74,10 +84,10 @@
                         <animations/>
                         <color key="backgroundColor" red="0.76092828232480192" green="1" blue="0.43222989407643886" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="7Dp-je-evx" firstAttribute="centerX" secondItem="OLM-Im-rse" secondAttribute="centerX" id="9MR-vg-Rxk"/>
-                            <constraint firstItem="7Dp-je-evx" firstAttribute="centerY" secondItem="OLM-Im-rse" secondAttribute="centerY" id="dzx-OI-au1"/>
-                            <constraint firstItem="7Dp-je-evx" firstAttribute="centerY" secondItem="OLM-Im-rse" secondAttribute="centerY" id="fzO-zw-vBs"/>
-                            <constraint firstItem="7Dp-je-evx" firstAttribute="centerX" secondItem="OLM-Im-rse" secondAttribute="centerX" id="kTe-go-lHQ"/>
+                            <constraint firstItem="7Dp-je-evx" firstAttribute="centerY" secondItem="OLM-Im-rse" secondAttribute="centerY" id="4eS-cg-3u1"/>
+                            <constraint firstItem="7Dp-je-evx" firstAttribute="top" secondItem="Q1Y-nn-d6s" secondAttribute="bottom" constant="293" id="W9a-Bs-wDM"/>
+                            <constraint firstItem="7Dp-je-evx" firstAttribute="leading" secondItem="OLM-Im-rse" secondAttribute="leadingMargin" constant="58" id="Zmd-6y-Ndy"/>
+                            <constraint firstItem="7Dp-je-evx" firstAttribute="centerX" secondItem="OLM-Im-rse" secondAttribute="centerX" id="ykr-QH-YOb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="Mwd-4K-5pj">
@@ -113,6 +123,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="coffee" width="53" height="107"/>
+        <image name="placeholder" width="66" height="73"/>
     </resources>
 </document>
