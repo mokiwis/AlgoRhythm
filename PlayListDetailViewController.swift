@@ -16,6 +16,7 @@ class PlayListDetailViewController: UIViewController {
     @IBOutlet weak var playlistTitle: UILabel!
     @IBOutlet weak var playlistDescription: UILabel!
     
+    
     @IBOutlet weak var playlistArtist0: UILabel!
     @IBOutlet weak var playlistArtist1: UILabel!
     @IBOutlet weak var playlistArtist2: UILabel!

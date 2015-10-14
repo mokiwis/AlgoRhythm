@@ -103,25 +103,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7U-bZ-iOO">
-                                <rect key="frame" x="0.0" y="234" width="414" height="120"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmS-4Z-DIf">
-                                        <rect key="frame" x="22" y="10" width="113.5" height="20.5"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="XmS-4Z-DIf" firstAttribute="leading" secondItem="z7U-bZ-iOO" secondAttribute="leading" constant="22" id="5hS-eh-OFw"/>
-                                    <constraint firstAttribute="width" secondItem="z7U-bZ-iOO" secondAttribute="height" multiplier="69:20" id="NNG-Bp-xL9"/>
-                                    <constraint firstItem="XmS-4Z-DIf" firstAttribute="top" secondItem="z7U-bZ-iOO" secondAttribute="top" constant="10" id="qU5-W6-EgJ"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIW-iN-ayi">
                                 <rect key="frame" x="19.5" y="425" width="95.5" height="17"/>
                                 <animations/>
@@ -158,12 +139,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Number 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UQ-1o-c8t">
-                                <rect key="frame" x="18.5" y="550" width="96" height="17"/>
+                                <rect key="frame" x="18.5" y="550" width="95.5" height="17"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7U-bZ-iOO">
+                                <rect key="frame" x="0.0" y="250" width="414" height="104"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmS-4Z-DIf">
+                                        <rect key="frame" x="22" y="10" width="113.5" height="20.5"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTj-Ow-IKh">
+                                        <rect key="frame" x="22" y="38" width="368" height="57"/>
+                                        <animations/>
+                                        <string key="text">This is a collection of my favorite songs to listen to when working out. It's got everything from fast cardio to power workout tunes. All the right fuel to get your engine going.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="XmS-4Z-DIf" firstAttribute="leading" secondItem="z7U-bZ-iOO" secondAttribute="leading" constant="22" id="5hS-eh-OFw"/>
+                                    <constraint firstAttribute="width" secondItem="z7U-bZ-iOO" secondAttribute="height" multiplier="69:20" constant="55.199999999999989" id="NNG-Bp-xL9"/>
+                                    <constraint firstItem="XmS-4Z-DIf" firstAttribute="top" secondItem="z7U-bZ-iOO" secondAttribute="top" constant="10" id="qU5-W6-EgJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.1764705882" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -204,7 +212,7 @@
                         <outlet property="playlistArtist5" destination="MBv-pS-y9K" id="sHe-jt-qO9"/>
                         <outlet property="playlistArtist6" destination="5UQ-1o-c8t" id="900-rv-wvQ"/>
                         <outlet property="playlistCoverImage" destination="Pbb-FU-hOC" id="Cj5-bC-YhC"/>
-                        <outlet property="playlistDescription" destination="xp5-dW-BdW" id="fbn-PL-TMR"/>
+                        <outlet property="playlistDescription" destination="RTj-Ow-IKh" id="6i9-PH-Tr8"/>
                         <outlet property="playlistTitle" destination="XmS-4Z-DIf" id="GhY-vb-4Vp"/>
                     </connections>
                 </viewController>
