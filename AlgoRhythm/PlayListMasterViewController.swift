@@ -10,16 +10,24 @@ import UIKit
 
 class PlayListMasterViewController: UIViewController {
 
+    var playlistArray: [UIImageView] = []
     @IBOutlet weak var aButton: UIButton!
     @IBOutlet weak var playlistView0: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        aButton.setTitle("Press me!", forState: .Normal)
         
-        let playlist = Playlist(index: 0)
-        playlistView0.image = playlist.icon
+        playlistArray.append(playlistView0)
+        
+        for index in 0..<playlistArray.count {
+            
+            let playlist = Playlist(index: index)
+            let playlistImageView = playlistArray[index]
+            
+            playlistImageView.image = playlist.icon
+            playlistImageView.backgroundColor = playlist.backgroundColor
+            
+        }
         
     }
 
@@ -31,12 +39,17 @@ class PlayListMasterViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showPlaylistDetail" {
             
-            let playlistDetailController = segue.destinationViewController as! PlayListDetailViewController
+            let playlistImageView = sender!.view as! UIImageView
             
-            playlistDetailController.playlist = Playlist(index: 0)
-            
+            if let indexOf(playlistArray, playlistImageView) {
+                
+                let playlistDetailController = segue.destinationViewController as! PlayListDetailViewController
+                
+                playlistDetailController.playlist = Playlist(index: index)
+                
+                
+            }
         }
     }
-
 }
 
